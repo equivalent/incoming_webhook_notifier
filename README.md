@@ -12,6 +12,10 @@ Why this gem ?
 Because it's using just native Ruby lib to send the request, nothing
 fancy.
 
+## Alternatives 
+
+* Slack - https://github.com/stevenosloan/slack-notifier
+
 ## Installation
 
 Add this line to your application's Gemfile:
