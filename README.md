@@ -66,7 +66,7 @@ options = {
   version: 'v2.0'
 }
 
-IncomingWebhookNotifier.airbrake_deploy_notify('https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX', options)
+IncomingWebhookNotifier.airbrake_deploy_notify('https://airbrake.io/api/v4/projects/1234projectid890/deploys?key=123projectkey890', options)
 ```
 
 ##### Other Examples
