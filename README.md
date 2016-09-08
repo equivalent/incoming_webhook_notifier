@@ -69,6 +69,10 @@ options = {
 IncomingWebhookNotifier.airbrake_deploy_notify('https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX', options)
 ```
 
+##### Other Examples
+
+check Wiki https://github.com/Pobble/incoming_webhook_notifier/wiki
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
