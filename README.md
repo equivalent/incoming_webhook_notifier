@@ -1,4 +1,4 @@
-# IncomingWebhookNotifier
+# Incoming Webhook Notifier
 
 Simple Ruby lang Net/HTTPs implementation to send requests to "incomming webhooks" of providers:
 
@@ -28,6 +28,37 @@ Or install it yourself as:
 
 ## Usage
 
+##### Slack Incoming Webhook
+
+https://api.slack.com/incoming-webhooks
+
+```ruby
+require 'incoming_webhook_notifier'
+
+IncomingWebhookNotifier.slack_notify(https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX, text: "Woo Hoo! Deployment was done")
+```
+
+##### Airbrake Deploy Tracking
+
+https://airbrake.io/docs/airbrake-faq/deploy-tracking/
+
+```ruby
+require 'incoming_webhook_notifier'
+
+git_commit_id = '38748467ea579e7ae64f7815452307c9d05e05c5'
+# note: this can actually be branch name too, thx to Github API magic it works:
+# git_commit_id = 'live-20160808_001'
+
+options = {
+  environment: 'production',
+  username: 'danny',
+  repository: 'https://github/dummy-organization/asking-alexandria',
+  revision: git_commit_id,
+  version: 'v2.0'
+}
+
+IncomingWebhookNotifier.airbrake_deploy_notify('https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX', options)
+```
 
 ## Development
 
