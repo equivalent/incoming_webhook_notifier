@@ -5,16 +5,19 @@
 Simple Ruby lang Net/HTTPs implementation to send requests to "incomming webhooks" of providers:
 
 * Slack https://api.slack.com/incoming-webhooks
-* Airbrake https://airbrake.io/docs/airbrake-faq/deploy-tracking/   # in   progress
+* Airbrake https://airbrake.io/docs/airbrake-faq/deploy-tracking/
 
 Why this gem ?
 
 Because it's using just native Ruby lib to send the request, nothing
-fancy.
+fancy therefore it can be used in Ruby scripts as well as Rails apps.
 
 ## Alternatives 
 
+Don't like the idea of this gem ? Try this approaches:
+
 * Slack - https://github.com/stevenosloan/slack-notifier
+* Airbrake - https://github.com/airbrake/airbrake/wiki/Accessing-Rake-tasks-outside-a-Rails-app
 
 ## Installation
 
