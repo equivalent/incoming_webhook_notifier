@@ -1,5 +1,7 @@
 # Incoming Webhook Notifier
 
+[![Build Status](https://travis-ci.org/Pobble/incoming_webhook_notifier.svg?branch=master)](https://travis-ci.org/Pobble/incoming_webhook_notifier)
+
 Simple Ruby lang Net/HTTPs implementation to send requests to "incomming webhooks" of providers:
 
 * Slack https://api.slack.com/incoming-webhooks
