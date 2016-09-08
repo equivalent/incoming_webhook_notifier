@@ -37,7 +37,7 @@ https://api.slack.com/incoming-webhooks
 ```ruby
 require 'incoming_webhook_notifier'
 
-IncomingWebhookNotifier.slack_notify(https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX, text: "Woo Hoo! Deployment was done")
+IncomingWebhookNotifier.slack_notify('https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX', text: "Woo Hoo! Deployment was done")
 ```
 
 ##### Airbrake Deploy Tracking
