@@ -1,6 +1,7 @@
 # Incoming Webhook Notifier
 
 [![Build Status](https://travis-ci.org/Pobble/incoming_webhook_notifier.svg?branch=master)](https://travis-ci.org/Pobble/incoming_webhook_notifier)
+[![Open Thanks](https://thawing-falls-79026.herokuapp.com/images/thanks-1.svg)](https://thawing-falls-79026.herokuapp.com/r/dvsrzclb)
 
 Simple Ruby lang Net/HTTPs implementation to send requests to "incomming webhooks" of providers:
 
